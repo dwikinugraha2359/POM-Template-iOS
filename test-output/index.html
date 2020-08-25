@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>iOSSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">5 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.media2359.tests.a_Authentication" class="method navigator-link" hash-for-method="A_001_LaunchApp">A_001_LaunchApp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.media2359.tests.a_Authentication</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="A_001_LaunchApp">
+                  </a> <!-- A_001_LaunchApp -->
+                  <span class="method-name">A_001_LaunchApp</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //XCUIElementTypeButton[@name=&apos;Forgot password?&apos;]}) (tried for 10 second(s) with 500 milliseconds interval)
+	at com.media2359.tests.a_Authentication.A_001_LaunchApp(a_Authentication.java:44)
+	at com.media2359.App.main(App.java:40)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/2359id/developments/office/NHG-Automation/NHG-iOS-Automation/iOSSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;addFromDateDrag&quot; value=&quot;2020-10-18&quot;/&gt;
+  &lt;parameter name=&quot;startPct002&quot; value=&quot;40&quot;/&gt;
+  &lt;parameter name=&quot;deleteeditDragAsg&quot; value=&quot;On Call&quot;/&gt;
+  &lt;parameter name=&quot;editLogBeforeToDate&quot; value=&quot;2020-10-25&quot;/&gt;
+  &lt;parameter name=&quot;titleViolationsPage&quot; value=&quot;Violations&quot;/&gt;
+  &lt;parameter name=&quot;endHr&quot; value=&quot;3&quot;/&gt;
+  &lt;parameter name=&quot;selectCause&quot; value=&quot;Completing administrative work&quot;/&gt;
+  &lt;parameter name=&quot;deviceName&quot; value=&quot;iPhone 8&quot;/&gt;
+  &lt;parameter name=&quot;addTimeTo&quot; value=&quot;01:30&quot;/&gt;
+  &lt;parameter name=&quot;addFromDate&quot; value=&quot;2020-10-08&quot;/&gt;
+  &lt;parameter name=&quot;canceldeleteFromDateDrag&quot; value=&quot;2020-10-24&quot;/&gt;
+  &lt;parameter name=&quot;vioAsgFilter&quot; value=&quot;Clinic&quot;/&gt;
+  &lt;parameter name=&quot;forgotPassMessage&quot; value=&quot;Please contact ITD Helpdesk (1800-483-4357) or email ITDHELP@NHG.COM.SG to change your NHG ADID Password. Thank you.&quot;/&gt;
+  &lt;parameter name=&quot;editBeforeDuration&quot; value=&quot;04:30&quot;/&gt;
+  &lt;parameter name=&quot;password&quot; value=&quot;password.123&quot;/&gt;
+  &lt;parameter name=&quot;titleDisclaimer&quot; value=&quot;Disclaimer&quot;/&gt;
+  &lt;parameter name=&quot;titleAsgModal&quot; value=&quot;Select assignment&quot;/&gt;
+  &lt;parameter name=&quot;endDateFilter&quot; value=&quot;2020-07-12&quot;/&gt;
+  &lt;parameter name=&quot;txtFilterVio&quot; value=&quot;Filter&quot;/&gt;
+  &lt;parameter name=&quot;automationName&quot; value=&quot;XCUITest&quot;/&gt;
+  &lt;parameter name=&quot;emptyAsgField&quot; value=&quot;Select an assignment&quot;/&gt;
+  &lt;parameter name=&quot;titleSelectAsgSc&quot; value=&quot;Select assignment&quot;/&gt;
+  &lt;parameter name=&quot;violationTitleLD&quot; value=&quot;Violations&quot;/&gt;
+  &lt;parameter name=&quot;menuDutyHour&quot; value=&quot;Duty Hours&quot;/&gt;
+  &lt;parameter name=&quot;titleDutyHours&quot; value=&quot;Duty Hours&quot;/&gt;
+  &lt;parameter name=&quot;addAsg&quot; value=&quot;On Call&quot;/&gt;
+  &lt;parameter name=&quot;changeSelectCause&quot; value=&quot;Completing a patient encounter&quot;/&gt;
+  &lt;parameter name=&quot;appiOS&quot; value=&quot;https://app.2359media.net/downloads/19792/1562208325/f94ab5bc395a7c0ebe2c26d5bd664e0546aba9fda582f5910f2d3fbeb85692e6.ipa&quot;/&gt;
+  &lt;parameter name=&quot;titleLogDetail&quot; value=&quot;Log detail&quot;/&gt;
+  &lt;parameter name=&quot;titleViolationScreen&quot; value=&quot;Violations&quot;/&gt;
+  &lt;parameter name=&quot;addToDate&quot; value=&quot;2020-10-09&quot;/&gt;
+  &lt;parameter name=&quot;endPct002&quot; value=&quot;60&quot;/&gt;
+  &lt;parameter name=&quot;deleteeditEndHrDrag&quot; value=&quot;3&quot;/&gt;
+  &lt;parameter name=&quot;txt90Vio&quot; value=&quot;90 days ago&quot;/&gt;
+  &lt;parameter name=&quot;editLogAsgAfter&quot; value=&quot;Ward&quot;/&gt;
+  &lt;parameter name=&quot;txtAllVio&quot; value=&quot;All&quot;/&gt;
+  &lt;parameter name=&quot;editLogBeforeFromDate&quot; value=&quot;2020-10-25&quot;/&gt;
+  &lt;parameter name=&quot;titleRotation&quot; value=&quot;Rotation&quot;/&gt;
+  &lt;parameter name=&quot;commentTitleLD&quot; value=&quot;Comments&quot;/&gt;
+  &lt;parameter name=&quot;canceldeleteDragAsg&quot; value=&quot;Home Call&quot;/&gt;
+  &lt;parameter name=&quot;addToDateFilter&quot; value=&quot;2020-10-10&quot;/&gt;
+  &lt;parameter name=&quot;txt30Vio&quot; value=&quot;30 days ago&quot;/&gt;
+  &lt;parameter name=&quot;commentVioDate&quot; value=&quot;2020-07-11&quot;/&gt;
+  &lt;parameter name=&quot;callDigit&quot; value=&quot;18004834357&quot;/&gt;
+  &lt;parameter name=&quot;appPath&quot; value=&quot;NHGSandbox5.app&quot;/&gt;
+  &lt;parameter name=&quot;addTimeFrom&quot; value=&quot;03:00&quot;/&gt;
+  &lt;parameter name=&quot;editBeforeTimeTo&quot; value=&quot;05:30&quot;/&gt;
+  &lt;parameter name=&quot;xcodeSigningId&quot; value=&quot;iPhone Developer&quot;/&gt;
+  &lt;parameter name=&quot;editBeforeTimeFrom&quot; value=&quot;01:00&quot;/&gt;
+  &lt;parameter name=&quot;platformVersion&quot; value=&quot;14.0&quot;/&gt;
+  &lt;parameter name=&quot;vioEndDateFilter&quot; value=&quot;2020-07-09&quot;/&gt;
+  &lt;parameter name=&quot;titleAddLogScreen&quot; value=&quot;New log&quot;/&gt;
+  &lt;parameter name=&quot;platformName&quot; value=&quot;iOS&quot;/&gt;
+  &lt;parameter name=&quot;udid&quot; value=&quot;9D35205A-D687-4584-AD07-01AD3BA25751&quot;/&gt;
+  &lt;parameter name=&quot;editAssignment&quot; value=&quot;Edu / Conference / Research&quot;/&gt;
+  &lt;parameter name=&quot;deleteeditStartHrDrag&quot; value=&quot;1&quot;/&gt;
+  &lt;parameter name=&quot;email&quot; value=&quot;resident2&quot;/&gt;
+  &lt;parameter name=&quot;addDuration&quot; value=&quot;22:30&quot;/&gt;
+  &lt;parameter name=&quot;txt60Vio&quot; value=&quot;60 days ago&quot;/&gt;
+  &lt;parameter name=&quot;startDateFilter&quot; value=&quot;2020-07-11&quot;/&gt;
+  &lt;parameter name=&quot;vioStartDateFilter&quot; value=&quot;2020-07-09&quot;/&gt;
+  &lt;parameter name=&quot;xcodeOrgId&quot; value=&quot;92C5QT57M9&quot;/&gt;
+  &lt;parameter name=&quot;startHr&quot; value=&quot;1&quot;/&gt;
+  &lt;parameter name=&quot;editLogBeforeDate&quot; value=&quot;2020-10-15&quot;/&gt;
+  &lt;parameter name=&quot;bundleId&quot; value=&quot;bundleid&quot;/&gt;
+  &lt;parameter name=&quot;asgFilter&quot; value=&quot;On Call&quot;/&gt;
+  &lt;parameter name=&quot;emailNHG&quot; value=&quot;ITDHELP@NHG.COM.SG&quot;/&gt;
+  &lt;parameter name=&quot;vioFromDate&quot; value=&quot;2020-07-12&quot;/&gt;
+  &lt;parameter name=&quot;wdaLocalPort&quot; value=&quot;8100&quot;/&gt;
+  &lt;parameter name=&quot;titleEditLogScreen&quot; value=&quot;Edit log&quot;/&gt;
+  &lt;parameter name=&quot;titleCommentScreen&quot; value=&quot;Comments&quot;/&gt;
+  &lt;parameter name=&quot;deleteFromDateDrag&quot; value=&quot;2020-09-22&quot;/&gt;
+  &lt;parameter name=&quot;inputComments&quot; value=&quot;Test input comment&quot;/&gt;
+  &lt;parameter name=&quot;addDragAsg&quot; value=&quot;On Call&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Authentication&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.media2359.tests.a_Authentication&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;A_002_ValidLogin&quot;/&gt;
+          &lt;exclude name=&quot;A_003_ForgotPassword&quot;/&gt;
+          &lt;exclude name=&quot;A_004_ForgotPasswordEmail&quot;/&gt;
+          &lt;exclude name=&quot;A_005_ForgotPasswordCall&quot;/&gt;
+          &lt;exclude name=&quot;A_005_ViewDisclaimer&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.media2359.tests.a_Authentication --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Authentication --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;CalendarView&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.media2359.tests.b_CalendarView&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;B_001_viewDutyHoursCalendar&quot;/&gt;
+          &lt;exclude name=&quot;B_002_addNewLogBybutton&quot;/&gt;
+          &lt;exclude name=&quot;B_003_addNewLogByDragging&quot;/&gt;
+          &lt;exclude name=&quot;B_004_cancelLoggingHoursUponLogging&quot;/&gt;
+          &lt;exclude name=&quot;B_005_deleteLogHoursBlockUponLogging&quot;/&gt;
+          &lt;exclude name=&quot;B_006_viewLogDetail&quot;/&gt;
+          &lt;exclude name=&quot;B_007_viewViolationsFromCalendarViewScreen&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.media2359.tests.b_CalendarView --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CalendarView --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ListView&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.media2359.tests.c_ListView&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;C_001_viewDutyHoursList&quot;/&gt;
+          &lt;exclude name=&quot;C_002_addNewLogBybutton&quot;/&gt;
+          &lt;exclude name=&quot;C_003_viewFilter&quot;/&gt;
+          &lt;exclude name=&quot;C_004_filterByDate&quot;/&gt;
+          &lt;exclude name=&quot;C_005_filterByAssignment&quot;/&gt;
+          &lt;exclude name=&quot;C_006_viewLogDetail&quot;/&gt;
+          &lt;exclude name=&quot;C_007_viewCommentsFromListViewScreen&quot;/&gt;
+          &lt;exclude name=&quot;C_008_viewViolationsFromListViewScreen&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.media2359.tests.c_ListView --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ListView --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LogDetail&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.media2359.tests.d_LogDetail&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;D_001_editLog&quot;/&gt;
+          &lt;exclude name=&quot;D_002_deleteLog&quot;/&gt;
+          &lt;exclude name=&quot;D_003_viewComments&quot;/&gt;
+          &lt;exclude name=&quot;D_004_sendComment&quot;/&gt;
+          &lt;exclude name=&quot;D_005_viewViolations&quot;/&gt;
+          &lt;exclude name=&quot;D_006_viewViolationsFromListViewScreen&quot;/&gt;
+          &lt;exclude name=&quot;D_007_selectViolationsCause&quot;/&gt;
+          &lt;exclude name=&quot;D_008_changeViolationsCause&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.media2359.tests.d_LogDetail --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LogDetail --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Violations&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.media2359.tests.e_Violations&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;E_001_goToViolations&quot;/&gt;
+          &lt;exclude name=&quot;E_002_filterViolationsDateRange&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.media2359.tests.e_Violations --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Violations --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Authentication (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">CalendarView (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ListView (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LogDetail (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Violations (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'A_001_LaunchApp')
+data.setCell(0, 2, 'com.media2359.tests.a_Authentication')
+data.setCell(0, 3, 34724);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">A_001_LaunchApp</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">true</span>
+                <span class="reporter-method-output">true</span>
+                <span class="reporter-method-output">true</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">30 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.media2359.tests.b_CalendarView</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">B_005_deleteLogHoursBlockUponLogging</span>
+                <br/>
+                <span class="ignored-method-name">B_001_viewDutyHoursCalendar</span>
+                <br/>
+                <span class="ignored-method-name">B_004_cancelLoggingHoursUponLogging</span>
+                <br/>
+                <span class="ignored-method-name">B_006_viewLogDetail</span>
+                <br/>
+                <span class="ignored-method-name">B_002_addNewLogBybutton</span>
+                <br/>
+                <span class="ignored-method-name">B_007_viewViolationsFromCalendarViewScreen</span>
+                <br/>
+                <span class="ignored-method-name">B_003_addNewLogByDragging</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.media2359.tests.c_ListView</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">C_004_filterByDate</span>
+                <br/>
+                <span class="ignored-method-name">C_008_viewViolationsFromListViewScreen</span>
+                <br/>
+                <span class="ignored-method-name">C_005_filterByAssignment</span>
+                <br/>
+                <span class="ignored-method-name">C_003_viewFilter</span>
+                <br/>
+                <span class="ignored-method-name">C_002_addNewLogBybutton</span>
+                <br/>
+                <span class="ignored-method-name">C_001_viewDutyHoursList</span>
+                <br/>
+                <span class="ignored-method-name">C_006_viewLogDetail</span>
+                <br/>
+                <span class="ignored-method-name">C_007_viewCommentsFromListViewScreen</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.media2359.tests.a_Authentication</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">A_002_ValidLogin</span>
+                <br/>
+                <span class="ignored-method-name">A_005_ForgotPasswordCall</span>
+                <br/>
+                <span class="ignored-method-name">A_003_ForgotPassword</span>
+                <br/>
+                <span class="ignored-method-name">A_004_ForgotPasswordEmail</span>
+                <br/>
+                <span class="ignored-method-name">A_005_ViewDisclaimer</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.media2359.tests.d_LogDetail</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">D_003_viewComments</span>
+                <br/>
+                <span class="ignored-method-name">D_004_sendComment</span>
+                <br/>
+                <span class="ignored-method-name">D_006_viewViolationsFromListViewScreen</span>
+                <br/>
+                <span class="ignored-method-name">D_007_selectViolationsCause</span>
+                <br/>
+                <span class="ignored-method-name">D_002_deleteLog</span>
+                <br/>
+                <span class="ignored-method-name">D_001_editLog</span>
+                <br/>
+                <span class="ignored-method-name">D_005_viewViolations</span>
+                <br/>
+                <span class="ignored-method-name">D_008_changeViolationsCause</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.media2359.tests.e_Violations</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">E_002_filterViolationsDateRange</span>
+                <br/>
+                <span class="ignored-method-name">E_001_goToViolations</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.media2359.tests.a_Authentication</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(iPhone 8, 14.0, iOS, 9D35205A-D687-4584-AD07-01AD3BA25751, 92C5QT57M9, iPhone Developer, https://app...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethodStart</span>
+                <span class="method-start">23153 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">A_001_LaunchApp</span>
+                <span class="method-start">23157 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenShot([TestResult name=A_001_LaunchApp status=FAILURE method=a_Authentication.A_001_LaunchApp()[pri:0, ins...)</span>
+                <span class="method-start">57882 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">62048 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

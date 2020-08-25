@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="30" total="31" passed="0" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[true]]>
+    </line>
+    <line>
+      <![CDATA[true]]>
+    </line>
+    <line>
+      <![CDATA[true]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2020-08-11T09:55:20Z" name="Suite" finished-at="2020-08-11T09:56:24Z" duration-ms="63992">
+    <groups>
+    </groups>
+    <test started-at="2020-08-11T09:55:20Z" name="Authentication" finished-at="2020-08-11T09:56:23Z" duration-ms="63871">
+      <class name="com.media2359.tests.a_Authentication">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.media2359.tests.a_Authentication@3427b02d]" started-at="2020-08-11T09:55:20Z" name="setup" finished-at="2020-08-11T09:55:43Z" duration-ms="23149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iPhone 8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[14.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9D35205A-D687-4584-AD07-01AD3BA25751]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[92C5QT57M9]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[iPhone Developer]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://app.2359media.net/downloads/19792/1562208325/f94ab5bc395a7c0ebe2c26d5bd664e0546aba9fda582f5910f2d3fbeb85692e6.ipa]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[8100]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[NHGSandbox5.app]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[bundleid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeMethodStart()[pri:0, instance:com.media2359.tests.a_Authentication@3427b02d]" started-at="2020-08-11T09:55:43Z" name="beforeMethodStart" finished-at="2020-08-11T09:55:43Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodStart -->
+        <test-method signature="A_001_LaunchApp()[pri:0, instance:com.media2359.tests.a_Authentication@3427b02d]" started-at="2020-08-11T09:55:43Z" name="A_001_LaunchApp" finished-at="2020-08-11T09:56:17Z" duration-ms="34724" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //XCUIElementTypeButton[@name='Forgot password?']}) (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //XCUIElementTypeButton[@name='Forgot password?']}) (tried for 10 second(s) with 500 milliseconds interval)
+at org.testng.Assert.fail(Assert.java:96)
+at com.media2359.tests.a_Authentication.A_001_LaunchApp(a_Authentication.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.media2359.App.main(App.java:40)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[true]]>
+            </line>
+            <line>
+              <![CDATA[true]]>
+            </line>
+            <line>
+              <![CDATA[true]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- A_001_LaunchApp -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.media2359.tests.a_Authentication@3427b02d]" started-at="2020-08-11T09:56:17Z" name="screenShot" finished-at="2020-08-11T09:56:22Z" duration-ms="4165" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=A_001_LaunchApp status=FAILURE method=a_Authentication.A_001_LaunchApp()[pri:0, instance:com.media2359.tests.a_Authentication@3427b02d] output=true]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.media2359.tests.a_Authentication@3427b02d]" started-at="2020-08-11T09:56:22Z" name="tearDown" finished-at="2020-08-11T09:56:23Z" duration-ms="1814" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.media2359.tests.a_Authentication -->
+    </test> <!-- Authentication -->
+    <test started-at="2020-08-11T09:56:24Z" name="CalendarView" finished-at="2020-08-11T09:56:24Z" duration-ms="0">
+    </test> <!-- CalendarView -->
+    <test started-at="2020-08-11T09:56:24Z" name="ListView" finished-at="2020-08-11T09:56:24Z" duration-ms="1">
+    </test> <!-- ListView -->
+    <test started-at="2020-08-11T09:56:24Z" name="LogDetail" finished-at="2020-08-11T09:56:24Z" duration-ms="0">
+    </test> <!-- LogDetail -->
+    <test started-at="2020-08-11T09:56:24Z" name="Violations" finished-at="2020-08-11T09:56:24Z" duration-ms="1">
+    </test> <!-- Violations -->
+  </suite> <!-- Suite -->
+</testng-results>

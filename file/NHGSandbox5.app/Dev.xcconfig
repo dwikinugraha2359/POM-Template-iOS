@@ -1,0 +1,12 @@
+//
+//  Dev.xcconfig
+//  NHG
+//
+//  Created by loc on 3/18/20.
+//  Copyright © 2020 2359 Media Pte Ltd. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+GOOGLE_PLIST_NAME = GoogleService-Info-Sandbox

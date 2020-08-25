@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="addFromDateDrag" value="2020-10-18"/>
+  <parameter name="startPct002" value="40"/>
+  <parameter name="deleteeditDragAsg" value="On Call"/>
+  <parameter name="editLogBeforeToDate" value="2020-10-25"/>
+  <parameter name="titleViolationsPage" value="Violations"/>
+  <parameter name="endHr" value="3"/>
+  <parameter name="selectCause" value="Completing administrative work"/>
+  <parameter name="deviceName" value="iPhone 8"/>
+  <parameter name="addTimeTo" value="01:30"/>
+  <parameter name="addFromDate" value="2020-10-08"/>
+  <parameter name="canceldeleteFromDateDrag" value="2020-10-24"/>
+  <parameter name="vioAsgFilter" value="Clinic"/>
+  <parameter name="forgotPassMessage" value="Please contact ITD Helpdesk (1800-483-4357) or email ITDHELP@NHG.COM.SG to change your NHG ADID Password. Thank you."/>
+  <parameter name="editBeforeDuration" value="04:30"/>
+  <parameter name="password" value="password.123"/>
+  <parameter name="titleDisclaimer" value="Disclaimer"/>
+  <parameter name="titleAsgModal" value="Select assignment"/>
+  <parameter name="endDateFilter" value="2020-07-12"/>
+  <parameter name="txtFilterVio" value="Filter"/>
+  <parameter name="automationName" value="XCUITest"/>
+  <parameter name="emptyAsgField" value="Select an assignment"/>
+  <parameter name="titleSelectAsgSc" value="Select assignment"/>
+  <parameter name="violationTitleLD" value="Violations"/>
+  <parameter name="menuDutyHour" value="Duty Hours"/>
+  <parameter name="titleDutyHours" value="Duty Hours"/>
+  <parameter name="addAsg" value="On Call"/>
+  <parameter name="changeSelectCause" value="Completing a patient encounter"/>
+  <parameter name="appiOS" value="https://app.2359media.net/downloads/19792/1562208325/f94ab5bc395a7c0ebe2c26d5bd664e0546aba9fda582f5910f2d3fbeb85692e6.ipa"/>
+  <parameter name="titleLogDetail" value="Log detail"/>
+  <parameter name="titleViolationScreen" value="Violations"/>
+  <parameter name="addToDate" value="2020-10-09"/>
+  <parameter name="endPct002" value="60"/>
+  <parameter name="deleteeditEndHrDrag" value="3"/>
+  <parameter name="txt90Vio" value="90 days ago"/>
+  <parameter name="editLogAsgAfter" value="Ward"/>
+  <parameter name="txtAllVio" value="All"/>
+  <parameter name="editLogBeforeFromDate" value="2020-10-25"/>
+  <parameter name="titleRotation" value="Rotation"/>
+  <parameter name="commentTitleLD" value="Comments"/>
+  <parameter name="canceldeleteDragAsg" value="Home Call"/>
+  <parameter name="addToDateFilter" value="2020-10-10"/>
+  <parameter name="txt30Vio" value="30 days ago"/>
+  <parameter name="commentVioDate" value="2020-07-11"/>
+  <parameter name="callDigit" value="18004834357"/>
+  <parameter name="appPath" value="NHGSandbox5.app"/>
+  <parameter name="addTimeFrom" value="03:00"/>
+  <parameter name="editBeforeTimeTo" value="05:30"/>
+  <parameter name="xcodeSigningId" value="iPhone Developer"/>
+  <parameter name="editBeforeTimeFrom" value="01:00"/>
+  <parameter name="platformVersion" value="14.0"/>
+  <parameter name="vioEndDateFilter" value="2020-07-09"/>
+  <parameter name="titleAddLogScreen" value="New log"/>
+  <parameter name="platformName" value="iOS"/>
+  <parameter name="udid" value="9D35205A-D687-4584-AD07-01AD3BA25751"/>
+  <parameter name="editAssignment" value="Edu / Conference / Research"/>
+  <parameter name="deleteeditStartHrDrag" value="1"/>
+  <parameter name="email" value="resident2"/>
+  <parameter name="addDuration" value="22:30"/>
+  <parameter name="txt60Vio" value="60 days ago"/>
+  <parameter name="startDateFilter" value="2020-07-11"/>
+  <parameter name="vioStartDateFilter" value="2020-07-09"/>
+  <parameter name="xcodeOrgId" value="92C5QT57M9"/>
+  <parameter name="startHr" value="1"/>
+  <parameter name="editLogBeforeDate" value="2020-10-15"/>
+  <parameter name="bundleId" value="bundleid"/>
+  <parameter name="asgFilter" value="On Call"/>
+  <parameter name="emailNHG" value="ITDHELP@NHG.COM.SG"/>
+  <parameter name="vioFromDate" value="2020-07-12"/>
+  <parameter name="wdaLocalPort" value="8100"/>
+  <parameter name="titleEditLogScreen" value="Edit log"/>
+  <parameter name="titleCommentScreen" value="Comments"/>
+  <parameter name="deleteFromDateDrag" value="2020-09-22"/>
+  <parameter name="inputComments" value="Test input comment"/>
+  <parameter name="addDragAsg" value="On Call"/>
+  <test thread-count="5" name="Authentication(failed)">
+    <classes>
+      <class name="com.media2359.tests.a_Authentication">
+        <methods>
+          <include name="screenShot"/>
+          <include name="beforeMethodStart"/>
+          <include name="A_001_LaunchApp"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.media2359.tests.a_Authentication -->
+    </classes>
+  </test> <!-- Authentication(failed) -->
+</suite> <!-- Failed suite [Suite] -->

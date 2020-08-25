@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+    <parameter name="platformName" value="iOS" />
+
+    <!-- Simulator -->
+    <!-- iPhone 8  -->
+    <parameter name="deviceName" value="iPhone 8" />
+    <parameter name="platformVersion" value="14.0" />
+    <parameter name="udid" value="9D35205A-D687-4584-AD07-01AD3BA25751" />
+
+    <!-- Apple ID -->
+    <!-- Dwiki -->
+    <parameter name="xcodeOrgId" value="92C5QT57M9" />
+    <parameter name="xcodeSigningId" value="iPhone Developer" />
+    <parameter name="automationName" value="XCUITest" />
+    <parameter name="wdaLocalPort" value="8100" />
+
+    <!-- **************** -->
+    <!-- iOS App -->
+    <parameter name="appiOS" value="{url_link}" />
+    <parameter name="appPath" value="NHGSandbox5.app" />
+
+    <!-- Bundle ID -->
+    <parameter name="bundleId" value="bundleid" />
+
+    <!-- **************** -->
+    <!-- Parameter Test -->
+    <parameter name="email" value="resident2" />
+    <parameter name="password" value="password.123" />
+    <parameter name="titleRotation" value="Rotation" />
+    <parameter name="titleDisclaimer" value="Disclaimer" />
+    <parameter name="forgotPassMessage" value="Please contact ITD Helpdesk (1800-483-4357) or email ITDHELP@NHG.COM.SG to change your NHG ADID Password. Thank you." />
+    <parameter name="callDigit" value="18004834357" />
+    <parameter name="emailNHG" value="ITDHELP@NHG.COM.SG" />
+
+    <!-- ********************************* -->
+    <test name="Authentication">
+        <classes>
+            <class name="com.media2359.tests.a_Authentication">
+                <methods>
+                    <!-- <exclude name="A_001_LaunchApp" /> -->
+                    <exclude name="A_002_ValidLogin" />
+                    <exclude name="A_003_ForgotPassword" />
+                    <exclude name="A_004_ForgotPasswordEmail" />
+                    <exclude name="A_005_ForgotPasswordCall" />
+                    <exclude name="A_005_ViewDisclaimer" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!-- Test Authentication -->
+</suite> <!-- Suite -->
